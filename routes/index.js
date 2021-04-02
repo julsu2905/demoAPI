@@ -4,7 +4,9 @@ const passport = require("passport");
 const userController = require("../controllers/user.controller");
 
 /* GET home page. */
-apiRouter.get("/login");
+apiRouter.get("/login",(req,res)=>{
+	res.render('login');
+});
 
 apiRouter.get(
 	"/auth/google",
